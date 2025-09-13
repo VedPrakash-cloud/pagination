@@ -17,7 +17,8 @@ export default function Pagination() {
         );
         setData(response.data);
       } catch (err) {
-        console.error("Error in fetching data:", err);
+        console.error("failed to fetch data", err);
+        alert("failed to fetch data");
       }
     };
     fetchApi();
